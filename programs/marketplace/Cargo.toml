@@ -1,0 +1,22 @@
+[package]
+name = "marketplace"
+version = "0.1.0"
+description = "SolanaPets NFP Marketplace — listings, escrow, rescue & adoption (devnet only)"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "marketplace"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.2"
+anchor-spl = "0.32.2"
+pet-registry = { path = "../pet-registry", features = ["cpi"] }
+paw-token = { path = "../paw-token", features = ["cpi"] }
