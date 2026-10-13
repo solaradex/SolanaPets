@@ -1,0 +1,20 @@
+[package]
+name = "breeding"
+version = "0.1.0"
+description = "SolanaPets NFP Breeding Program — on-chain genetics (devnet only)"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "breeding"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.2"
+pet-registry = { path = "../pet-registry", features = ["cpi"] }
