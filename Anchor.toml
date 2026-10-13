@@ -1,0 +1,19 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+pet_registry = "HZhS2qw6edrL7YKjUZopjJGdSfh9UJniVCAZ9ZMkQFkz"
+breeding = "4XjtZUPzHMJTLCkAT3ZWqUB4g3viopH1R1XhFU9hBeXQ"
+paw_token = "HEHEXUJfmQ3S5i2vxH6SqmZVBQo78vmygD3dVx1BZWSk"
+raffle = "7gVjk6k9WPUanx2GyWaHwt229NXiQwtHMChBbMerfmyQ"
+
+[registry]
+url = "https://api.reg.crates.io"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
