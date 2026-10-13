@@ -1,0 +1,20 @@
+[package]
+name = "paw-token"
+version = "0.1.0"
+description = "SolanaPets $PAW utility token — earned by play, burned by purchases (devnet only)"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "paw_token"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "0.32.2", features = ["init-if-needed"] }
+anchor-spl = "0.32.2"
