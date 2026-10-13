@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#1c2f5e"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <!-- crescent moon -->
+  <path d="M84 26a30 30 0 1 0 18 54A36 36 0 0 1 84 26z" fill="#f4f1de"/>
+  <!-- paw -->
+  <g fill="#7fd4ff" opacity="0.95">
+    <ellipse cx="52" cy="78" rx="14" ry="11"/>
+    <circle cx="36" cy="62" r="6"/>
+    <circle cx="48" cy="56" r="6"/>
+    <circle cx="60" cy="56" r="6"/>
+    <circle cx="70" cy="64" r="6"/>
+  </g>
+</svg>
