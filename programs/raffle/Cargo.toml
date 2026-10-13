@@ -1,0 +1,21 @@
+[package]
+name = "raffle"
+version = "0.1.0"
+description = "SolanaPets Genesis Raffle — 15,000 Genesis NFP distribution (devnet only)"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "raffle"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "0.32.2", features = ["init-if-needed"] }
+anchor-spl = "0.32.2"
+pet-registry = { path = "../pet-registry", features = ["cpi"] }
